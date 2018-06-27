@@ -212,7 +212,7 @@ describe('Repository', function() {
       // @TODO repo.branch, repo.pull
 
       it('should list repo branches', function(done) {
-         remoteRepo.listBranches(assertSuccessful(done));
+         remoteRepo.listBranches(null, assertSuccessful(done));
       });
 
       it('should get commit from repo', function(done) {
